@@ -91,17 +91,18 @@ const guns = [
 
 ];
 
-// Function to trigger alert
 function showFollowerAlert(username) {
   const gun = guns[Math.floor(Math.random() * guns.length)];
   const alertDiv = document.getElementById('alert');
-  alertDiv.innerHTML = ` ${username} got a ${gun.name}! <img class="gun-img" src="${gun.img}" />`;
+  alertDiv.innerHTML = `${username} got a ${gun.name}! <img class="gun-img" src="${gun.img}" />`;
 
-  // Auto-hide after 5 seconds
-  setTimeout(() => { alertDiv.innerHTML = ''; }, 5000);
+  setTimeout(() => {
+    alertDiv.innerHTML = '';
+  }, 5000);
 }
 
 </script>
 </body>
 
 </html>
+
